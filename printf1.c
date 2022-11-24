@@ -14,13 +14,11 @@ int print_d(va_list d)
 	num = 0;
 	k = 1000000000;
 	i[0] = l / k;
-
 	for (j = 1; j < 10; j++)
 	{
 		k /= 10;
 		i[j] = (l / k) % 10;
 	}
-
 	if (l < 0)
 	{
 		_putchar('-');
@@ -43,7 +41,7 @@ int print_d(va_list d)
 }
 
 /**
- * print_i handles i conversion specifier
+ * print_i - handles i conversion specifier
  * @i: integer
  * Return: number of printed integers
  */
@@ -65,7 +63,7 @@ int print_i(va_list i)
 	{
 		_putchar('-');
 		num++;
-		for (j = 0; j < 10; j++;)
+		for (j = 0; j< 10; j++)
 		{
 			is[j] *= -1;
 		}
