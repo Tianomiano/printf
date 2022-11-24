@@ -11,17 +11,14 @@ static int(*specifiers(const char *format))(va_list)
 		print_t p[] = {
 		{"c", print_c},
 		{"s", print_s},
-<<<<<<< HEAD
 		{"b", print_b},
 		{"u", print_u},
 		{"o", print_o},
 		{"x", print_x},
 		{"X", print_X},
 		{"p", print_p},
-=======
 		{"d", print_d},
 		{"i", print_i},
->>>>>>> ef6f2d0bf413b6af014d299df4fc4d29fb95b50a
 		{NULL, NULL}
 	};
 	for (i = 0; p[i].t != NULL; i++)
