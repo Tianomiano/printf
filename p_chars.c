@@ -25,7 +25,7 @@ int print_s(va_list s)
 
 	if (str == NULL)
 	{
-		str = "(NULL)";
+		str = (NULL);
 	}
 	for (j = 0; str[j]; j++)
 	{
