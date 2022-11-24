@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_d - handles d converesion specifier
+ * print_d - handles d conversion specifier
  * @d: decimal
  * Return: number of printed integers
  */
@@ -14,6 +14,7 @@ int print_d(va_list d)
 	num = 0;
 	k = 1000000000;
 	i[0] = l / k;
+
 	for (j = 1; j < 10; j++)
 	{
 		k /= 10;
@@ -63,7 +64,7 @@ int print_i(va_list i)
 	{
 		_putchar('-');
 		num++;
-		for (j = 0; j< 10; j++)
+		for (j = 0; j < 10; j++)
 		{
 			is[j] *= -1;
 		}
