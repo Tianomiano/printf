@@ -62,5 +62,6 @@ int _printf(const char *format, ...)
 			i++;
 	}
 	va_end(op);
+	putchar("\n");
 	return (j);
 }
