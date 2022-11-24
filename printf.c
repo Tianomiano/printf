@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* specifiers - checks for specifiers
-* @format: format spec
-* Return: pointer to func
+*specifiers - checks for specifiers
+*@format: format spec
+*Return: pointer to func
 */
 static int(*specifiers(const char *format))(va_list)
 {
@@ -11,12 +11,17 @@ static int(*specifiers(const char *format))(va_list)
 		print_t p[] = {
 		{"c", print_c},
 		{"s", print_s},
+<<<<<<< HEAD
 		{"b", print_b},
 		{"u", print_u},
 		{"o", print_o},
 		{"x", print_x},
 		{"X", print_X},
 		{"p", print_p},
+=======
+		{"d", print_d},
+		{"i", print_i},
+>>>>>>> ef6f2d0bf413b6af014d299df4fc4d29fb95b50a
 		{NULL, NULL}
 	};
 	for (i = 0; p[i].t != NULL; i++)
@@ -29,9 +34,9 @@ static int(*specifiers(const char *format))(va_list)
 	return (p[i].f);
 }
 /**
-* _printf -prints
-* @format: list of arg tpes
-* Return: no of char printed
+*_printf -prints
+*@format: list of arg tpes
+*Return: no of char printed
 */
 int _printf(const char *format, ...)
 {
