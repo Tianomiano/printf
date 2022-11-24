@@ -6,14 +6,14 @@
 #include <stdarg.h>
 
 /**
-*struct print - structure for various format types
-*@t: type to print
-*@f: pointer to func to print
+* struct print - structure for various format types
+* @t: type to print
+* @f: pointer to func to print
 */
 typedef struct print
 {
-        char *t;
-        int (*f)(va_list);
+	char *t;
+	int (*f)(va_list);
 } print_t;
 
 int _printf(const char *format, ...);
