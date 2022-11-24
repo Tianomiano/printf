@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-*specifiers - checks for specifiers
-*@format: format spec
-*Return: pointer to func
+* specifiers - checks for specifiers
+* @format: format spec
+* Return: pointer to func
 */
 static int(*specifiers(const char *format))(va_list)
 {
@@ -23,9 +23,9 @@ static int(*specifiers(const char *format))(va_list)
 	return (p[i].f);
 }
 /**
-*_printf -prints
-*@format: list of arg tpes
-*Return: no of char printed
+* _printf -prints
+* @format: list of arg tpes
+* Return: no of char printed
 */
 int _printf(const char *format, ...)
 {
