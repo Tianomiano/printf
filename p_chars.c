@@ -31,5 +31,6 @@ int print_s(va_list s)
 	{
 		_putchar(str[j]);
 	}
+	printf("\n");
 	return (j);
 }
