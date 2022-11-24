@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-*print_c - c specifier for char type
-*@c: char
-*Return: 1
+* print_c - c specifier for char type
+* @c: char
+* Return: 1
 */
 int print_c(va_list c)
 {
@@ -13,9 +13,9 @@ int print_c(va_list c)
 	return (1);
 }
 /**
-*print_s - prints an array of chars
-*@s: char array
-*Return: chars printed
+* print_s - prints an array of chars
+* @s: char array
+* Return: chars printed
 */
 
 int print_s(va_list s)
@@ -25,7 +25,7 @@ int print_s(va_list s)
 
 	if (str == NULL)
 	{
-		str = "(NULL)";
+		str = (NULL);
 	}
 	for (j = 0; str[j]; j++)
 	{
