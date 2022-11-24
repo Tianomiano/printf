@@ -42,9 +42,9 @@ int print_p(va_list p)
 	}
 	_putchar('0');
 	_putchar('x');
-	count = 3;
+	count = 2;
 	j = _pow(16, 15);
-	opp[0] = (k / j);
+	opp[0] = k / j;
 	for (i = 1; i < 16; i++)
 	{
 		j /= 16;
