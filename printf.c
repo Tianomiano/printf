@@ -11,6 +11,12 @@ static int(*specifiers(const char *format))(va_list)
 		print_t p[] = {
 		{"c", print_c},
 		{"s", print_s},
+		{"b", print_b},
+		{"u", print_u},
+		{"o", print_o},
+		{"x", print_x},
+		{"X", print_X},
+		{"p", print_p},
 		{"d", print_d},
 		{"i", print_i},
 		{NULL, NULL}
