@@ -24,7 +24,7 @@ static int(*specifiers(const char *format))(va_list)
 }
 /**
 *_printf -prints
-*@format: list of arg tpes
+*@format: list of arg types
 *Return: no of char printed
 */
 int _printf(const char *format, ...)
