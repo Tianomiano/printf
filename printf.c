@@ -19,9 +19,6 @@ static int(*specifiers(const char *format))(va_list)
 		{"p", print_p},
 		{"d", print_d},
 		{"i", print_i},
-		{"+", print_+},
-		{" ", print_ },
-		{"#", print_#},
 		{"S", print_S},
 		{"r", print_r},
 		{NULL, NULL}
