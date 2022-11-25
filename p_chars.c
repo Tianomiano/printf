@@ -67,7 +67,7 @@ int print_S(va_list S)
 	char *Str = va_arg(S, char *);
 
 	if (Str == NULL)
-		Str == "(null)";
+		Str = "(null)";
 	for (i = 0; Str[i]; i++)
 	{
 		if (Str[i] < 32 || Str[i] >= 127)
